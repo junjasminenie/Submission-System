@@ -3,10 +3,13 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.9'
 
+
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '5.2.6'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# gem 'sqlite3'
+gem 'pg'
 # Switch to postgres for a database
 # gem 'pg', '0.21.0'
 # Use Puma as the app server
@@ -17,6 +20,8 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
+
+
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
@@ -59,6 +64,7 @@ group :development, :test do
   # gem 'better_errors'
   # gem 'binding_of_caller'
   # gem 'meta_request'
+
   gem 'hirb', '0.7.3'
   gem 'faker', '2.16.0'
   gem 'populator', '1.0.0'
@@ -80,6 +86,7 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring', '2.1.1'
   gem 'spring-watcher-listen', '2.0.1'
+  gem 'capistrano',                 '2.15.5'
 end
 
 group :test do
