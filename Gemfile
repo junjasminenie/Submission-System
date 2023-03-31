@@ -87,6 +87,8 @@ group :development do
   gem 'spring', '2.1.1'
   gem 'spring-watcher-listen', '2.0.1'
   gem 'capistrano',                 '2.15.5'
+  gem "ed25519"
+  gem "bcrypt_pbkdf"
 end
 
 group :test do
