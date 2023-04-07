@@ -56,6 +56,7 @@ gem 'simple_form', '5.1.0'
 gem 'materialize-form', git: 'https://github.com/cmu-is-projects/materialize-form.git'
 gem 'best_in_place', '3.0.3'
 gem 'materialize-sass', '1.0.0'
+# gem 'time_date_helpers'
 
 
 group :development, :test do
@@ -81,11 +82,11 @@ end
 
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
-  gem 'web-console', '3.7.0'
-  gem 'listen', '3.1.5'
+  # gem 'web-console', '3.7.0'
+  # gem 'listen', '3.1.5'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring', '2.1.1'
-  gem 'spring-watcher-listen', '2.0.1'
+  # gem 'spring', '2.1.1'
+  # gem 'spring-watcher-listen', '2.0.1'
   gem 'capistrano',                 '2.15.5'
   gem "ed25519"
   gem "bcrypt_pbkdf"
